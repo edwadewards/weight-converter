@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Weight Converter</title>
+</head>
+<body>
+  <div class="container">
+  <div class="form-container">
+    <h1>Weight Converter</h1>
+  <form action="GET">
+    <input type="number" placeholder="Enter number and select weight..." id="number-value">
+    <select name="weight" id="weight-selection">
+      <option value="pounds">
+        Pounds
+      </option>
+      <option value="grams">
+        Grams
+      </option>
+      <option value="kilograms">
+        Kilograms
+      </option>
+      <option value="ounces">
+        Ounces
+      </option>
+    </select>
+  </form>
+  </div>
+  
+  <div class="dash-container">
+    <div class="weight-type pounds-dash" data-dash>
+      <h1 id="pounds">Pounds:</h1>
+      <p class="pounds-output"></p>
+    </div>
+    
+    <div class="weight-type grams-dash" data-dash="">
+      <h1 id="grams">Grams:</h1>
+      <p class="grams-output"></p>
+    </div>
+    
+    <div class="weight-type kilograms-dash" data-dash="">
+      <h1 id="kilograms">Kilograms:</h1>
+      <p class="kg-output"></p>
+    </div>
+    
+    <div class="weight-type ounces-dash" data-dash="">
+      <h1 id="ounces">Ounces:</h1>
+      <p class="oz-output"></p>
+    </div>
+  </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
